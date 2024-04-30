@@ -1,0 +1,25 @@
+#include <iostream>
+
+int main() {
+    int n, m;
+    int soma = 0;
+
+    std::cout << "Digite o valor de n: ";
+    std::cin >> n;
+
+    std::cout << "Digite o valor de m: ";
+    std::cin >> m;
+
+    // Verifica se n é par, se sim, incrementa para o próximo ímpar
+    if (n % 2 == 0) 
+        n++;
+
+    // Itera de n até m, somando apenas os ímpares
+    for (int i = n; i <= m; i += 2) {
+        soma += i;
+    }
+
+    std::cout << "A soma de todos os números ímpares entre " << n << " e " << m << " é: " << soma << std::endl;
+
+    return 0;
+}
