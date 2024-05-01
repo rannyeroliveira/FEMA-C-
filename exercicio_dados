@@ -1,0 +1,23 @@
+#include <iostream>
+
+
+using namespace std;
+
+int main()
+{
+    int face1, face2,soma,d1,d2;
+    cout << "Digite a quantidade de lados do dado 1:";
+    cin >>d1;
+    cout << "Digite a quantidade de lados do dado 2";
+    cin >>d2;
+    while(face1<d1){
+        face1 = face1 + 1;
+        face2 = 0;
+        while(face2<d2){
+            face2 = face2 +1;
+            soma = face1 + face2;
+            cout << face1 <<"+"<<face2<<"="<<soma<<endl;
+        }
+    }
+    return 0;
+}
