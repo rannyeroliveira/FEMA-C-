@@ -1,0 +1,23 @@
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+int main()
+{
+    int num;
+    char nome[30];
+    strcpy(nome , "Nenhum nome foi cadastrado");
+    while(num != 3){
+        cout << "[1] Cadastrar Nome" << endl << "[2] Imprimir Nome" << endl << "[3] Sair" << endl;
+        cin >> num;
+        if(num==1){
+            cout << "Digite o nome para cadastrar:";
+            cin >> nome;
+        }
+        if(num==2){
+            cout << nome<< endl;
+        }
+    }
+    return 0;
+}
